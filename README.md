@@ -2,7 +2,7 @@
 
 On-device model weights downloaded by the Babaru app. Each model is a release, and the app downloads its files directly from there.
 
-## What the app uses (Babaru 4.1.2, November 2026)
+## What the app uses (Babaru 4.1.2 and 4.1.3, November 2026)
 
 | Release | File | What it is | SHA-256 |
 |---|---|---|---|
@@ -13,12 +13,20 @@ On-device model weights downloaded by the Babaru app. Each model is a release, a
 | `babaru-qwen3-1.7b-v7-de3chat` | `babaru-qwen3-1.7b-de3e2-chat-lora.gguf` | Chat add-on, German | `5f78b7e369e530b85f19812b7395ee192fdb2f86c1c515c9a7680d91cb0bd5de` |
 | `babaru-gemma4-e2b-r18chat` | `babaru-gemma4-e2b-r18e1-chat-lora.gguf` | Chat add-on, French and Italian | `933fe108cbea02ba1c1131605c613e0a50c3de5647c7594d6f766adab4417420` |
 
+## Ready for the next app build
+
+| Release | File | What it is | SHA-256 |
+|---|---|---|---|
+| `babaru-gemma4-e2b-r30chat` | `babaru-gemma4-e2b-r30a1-chat-lora.gguf` | Chat add-on, German, on the larger model at half strength | `dfec858b37eab9ea0376c79469ae1040c704216659db9a8b77c80561ddf348d3` |
+
+No store build points at it yet; the next one will.
+
 The app checks each file's size and hash when it downloads it. One larger language model is over GitHub's 2 GB limit for a release file, so the app gets it from its publisher.
 
 ## Publishing
 
 Every version gets a new file name and its own release. Never replace a file in a release that a store build points at.
 
-A phone installs a release by itself only if it carries a `babaru-model.json` whose `promptFormat` matches the build. Version 4.1.2 is on format 14 and no release here declares it, so phones stay on the files above.
+A phone installs a release by itself only if it carries a `babaru-model.json` whose `promptFormat` matches the build. Versions 4.1.2 and 4.1.3 are on format 14 and no release here declares it, so phones stay on the files above.
 
-The other releases are not used by 4.1.2. They stay so that older installs keep working.
+The other releases are not used by 4.1.2 or 4.1.3. They stay so that older installs keep working.
