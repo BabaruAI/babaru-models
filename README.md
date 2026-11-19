@@ -2,7 +2,7 @@
 
 On-device model weights downloaded by the Babaru app. Each model is a release, and the app downloads its files directly from there.
 
-## What the app uses (Babaru 4.1.5, November 2026)
+## What the app uses (Babaru 4.1.6, November 2026)
 
 | Release | File | What it is | SHA-256 |
 |---|---|---|---|
@@ -10,14 +10,16 @@ On-device model weights downloaded by the Babaru app. Each model is a release, a
 | `babaru-qwen3-1.7b-v7` | `babaru-qwen3-1.7b-v7-facts-lora.gguf` | Add-on for fact answers | `1c09b2a237d90ae95cc184bc5cd364c1693cbcd745bc43515a96b8974275508b` |
 | `babaru-qwen3-1.7b-v7` | `babaru-qwen3-1.7b-v7-answers-lora.gguf` | Add-on for checked answers | `1cd816680bb04ab056cd4125ca1aadb192f4de37292b0dc9fd78be90e886bfb2` |
 | `babaru-qwen3-1.7b-v7-r38chat` | `babaru-qwen3-1.7b-r38f-chat-lora.gguf` | Chat add-on, English, at half strength | `0a672a37e3f48626cd1682da54ab5c1adc544ec12c4c83df89379ba2696a95a2` |
-| `babaru-qwen3-1.7b-v7-de39chat` | `babaru-qwen3-1.7b-r39qden1-chat-lora.gguf` | Chat add-on, German, on the main model | `53721bb5656c948080375712294db6678b3b356cb9e0d12c74840a9e22d8286a` |
+| `babaru-qwen3-1.7b-v7-de41chat` | `babaru-qwen3-1.7b-r41q41b1-chat-lora.gguf` | Chat add-on, German, on the main model | `88e9a3fbbd1de22fc2323cc2f57f8ada111f50dd55b3b755aac07653d8afe326` |
 | `babaru-gemma4-e2b-r38chat` | `babaru-gemma4-e2b-r38fdea1-chat-lora.gguf` | Chat add-on, German, on the larger model at half strength | `e4763b6f4ef339ebe70b97a6aa019815ef892e7474f449e3504f68702669be44` |
 | `babaru-gemma4-e2b-r18chat` | `babaru-gemma4-e2b-r18e1-chat-lora.gguf` | Chat add-on, French and Italian | `933fe108cbea02ba1c1131605c613e0a50c3de5647c7594d6f766adab4417420` |
+| `babaru-canary-180m-de-v1` | `babaru-canary-180m-de-v1.tar.bz2` | German speech recognition (NVIDIA Canary 180M Flash, CC-BY 4.0, fine-tuned for German) | `34844ce9246222095bf7276e3d9312a103d8ae895a2537408d256588ef191132` |
 
-## Still used by 4.1.2 to 4.1.4
+## Still used by 4.1.2 to 4.1.5
 
 | Release | File | What it is | SHA-256 |
 |---|---|---|---|
+| `babaru-qwen3-1.7b-v7-de39chat` | `babaru-qwen3-1.7b-r39qden1-chat-lora.gguf` | Chat add-on, German, on the main model (4.1.5) | `53721bb5656c948080375712294db6678b3b356cb9e0d12c74840a9e22d8286a` |
 | `babaru-qwen3-1.7b-v7-r14chat` | `babaru-qwen3-1.7b-r14e3-chat-lora.gguf` | Chat add-on, English (4.1.2 and 4.1.3) | `fd384dbf891a2fd563a327358c5e26a13355688addffb22bbba6638aeaf5c2c3` |
 | `babaru-gemma4-e2b-r30chat` | `babaru-gemma4-e2b-r30a1-chat-lora.gguf` | Chat add-on, German, on the larger model at half strength (4.1.3) | `dfec858b37eab9ea0376c79469ae1040c704216659db9a8b77c80561ddf348d3` |
 | `babaru-qwen3-1.7b-v7-de3chat` | `babaru-qwen3-1.7b-de3e2-chat-lora.gguf` | Chat add-on, German, on the main model (up to 4.1.4) | `5f78b7e369e530b85f19812b7395ee192fdb2f86c1c515c9a7680d91cb0bd5de` |
